@@ -1,11 +1,32 @@
+/* fonts */
+@font-face {
+    font-family: "Iosevka Dingdong";
+    src: url("https://raw.githubusercontent.com/Xextan/iosevka-dingdong/refs/heads/main/dist/IosevkaDingdong/TTF/IosevkaDingdong-Regular.ttf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Iosevka Dingdong";
+    src: url("https://raw.githubusercontent.com/Xextan/iosevka-dingdong/refs/heads/main/dist/IosevkaDingdong/TTF/IosevkaDingdong-Oblique.ttf");
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Iosevka Dingdong";
+    src: url("https://raw.githubusercontent.com/Xextan/iosevka-dingdong/refs/heads/main/dist/IosevkaDingdong/TTF/IosevkaDingdong-Bold.ttf");
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Iosevka Dingdong";
+    src: url("https://raw.githubusercontent.com/Xextan/iosevka-dingdong/refs/heads/main/dist/IosevkaDingdong/TTF/IosevkaDingdong-BoldOblique.ttf");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
 *, ::before, ::after {
     box-sizing: border-box;
     margin-top: 0;
-}
-
-@font-face {
-    font-family: 'DIN1451-H';
-    src: url(/DIN1451_4H_08.87.ttf);
 }
 
 :root {
@@ -17,8 +38,8 @@
 html {
     color-scheme: dark;
     padding: 0.5rem;
-    font-family: 'DIN1451-H', Arial, Helvetica, sans-serif;
-    font-size: 18pt;
+    font-family: 'Iosevka Dingdong', Arial, Helvetica, sans-serif;
+    font-size: 14pt;
     min-height: 100%;
     background-color: var(--primary);
     &:has(#mode-switcher:checked) {
